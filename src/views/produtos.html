@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+
+</head>
+<body>
+    <br>
+    <div class="container-produtos">
+        <form class="row g-3" id="frmProduto">
+            <!-- Botões -->
+            <div class="row g-3" id="frmProduct">
+                <div id="barraDePesquisa">
+                    <div class="col-md-6">
+                        <!-- leitura do código de barras -->
+                        <input type="text" class="form-label bigInput" id="inputSearch">
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" onclick="buscarProdutos()" class="btn searchButton btn-dark" id="btnRead">Buscar</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-6 inputId">
+                <!-- id do produto -->
+                <label for="inputIDPro" class="form-label">id</label>
+                <br>
+                <input type="text" class="form-label" id="inputIDPro" spellcheck="false">
+            </div>
+            <div class="col-md-6">
+                <!-- leitura do código de barras -->
+                <label for="inputDescription" class="form-label">Descrição do Produto</label>
+                <br>
+                <input type="text" class="form-label bigInput" id="inputDescription" spellcheck="false">
+            </div>
+            
+            <div class="col-md-6">
+                <!-- leitura do código de barras -->
+                <label for="inputCategory" class="form-label midInput">Categoria</label>
+                <br>
+                <input type="text" class="form-label bigInput" id="inputCategory" spellcheck="false">
+            </div>
+            <div class="col-md-6">
+                <!-- leitura do código de barras -->
+                <label for="inputBarcode" class="form-label">Código de barras</label>
+                <br>
+                <input type="text" class="form-label bigInput" id="inputBarcode" spellcheck="false">
+            </div>
+            <div class="col-md-6">
+                <!-- leitura do código de barras -->
+                <label for="inputCusto" class="form-label ">Preço custo</label>
+                <br>
+                <input type="text" class="form-label smallInput" id="inputCusto" spellcheck="false">
+            </div>
+            <div class="col-md-6">
+                <!-- leitura do código de barras -->
+                <label for="inputPreco" class="form-label">Preço</label>
+                <br>
+                <input type="text" class="form-label smallInput" id="inputPreco" spellcheck="false">
+            </div>
+            <div class="col-md-5">
+                <!-- imagem do produto -->
+                <img src="../public/img/camera.png" alt="Imagem do produto" id="imageProduct">
+            </div>
+            <!-- upload da imagem do produto -->
+            <input type="file" id="uploadImage">
+            <div class="col-12">
+                <button type="submit" class="btn buttonCRUD" id="btnCreate">➕Adicionar</button>
+                <button type="button" class="btn buttonCRUD" id="btnUpdate" onclick="editarFornecedor()">✏Editar</button>
+                <button type="button" class="btn buttonCRUD" id="btnDelete" onclick="excluirFornecedor()">🗑Excluir</button>
+                <button type="reset" class="btn buttonCRUD" id="btnReset" onclick="resetForm()">🧹Limpar Formulário</button>   
+            </div>
+        </form>
+    </div>
+    <script src="../views/produtos.js"></script>
+    <script src="../public/js/bootstrap.min.js"></script>
+    <script src="../views/cep.js"></script>
+</body>
+</html>

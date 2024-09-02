@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- evitar ataques de Cross Site Scripting (injeção de dados)-->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+
+    <!-- css personalizado (por último)-->
+    <link rel="stylesheet" href="../public/css/style.css">
+
+    <title>Clientes</title>
+</head>
+
+<body>
+    <div class="container-cliente">
+        <form class="mt-2 row g-3" id="frmClient formCssCliente">
+            <div id="barraDePesquisa">
+            <!-- Buscar cliente -->
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="inputSearch" maxlength="30" spellcheck="false">               
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn searchButton btn-dark" onclick="buscarCliente()"     id="btnRead">Buscar</button>
+                </div>
+            </div>
+            
+            <!-- id oculto-->
+            <div class="col-md-6"  id="idCliente">
+                <input type="text" class="form-control inputId" id="inputIDCli" placeholder="id">                
+            </div>
+            <!-- Nome -->
+            <div class="col-md-8">
+                <label for="inputNameClient" class="form-label">Nome</label>
+                <input type="text" class="form-control bigInput" id="inputNameClient" required maxlength="50" spellcheck="false">
+            </div>
+            <!-- Telefone -->
+            <div class="col-md-4">
+                <label for="inputPhoneClient" class="form-label">Telefone</label>
+                <input type="tel" class="form-control midInput" id="inputPhoneClient" required maxlength="15">
+            </div>
+            <!-- E-mail -->
+            <div class="col-8">
+                <label for="inputEmailClient" class="form-label">E-mail</label>
+                <input type="email" class="form-control bigInput" id="inputEmailClient" spellcheck="false">
+            </div>
+            <!-- Botões -->
+            <div class="mt-5">
+                <button type="submit" class="btn buttonCRUD" id="btnCreate">➕Adicionar</button>
+                <button type="button" class="btn buttonCRUD" id="btnUpdate" onclick="editarFornecedor()">✏Editar</button>
+                <button type="button" class="btn buttonCRUD" id="btnDelete" onclick="excluirFornecedor()">🗑Excluir</button>
+                <button type="reset" class="btn buttonCRUD" id="btnReset" onclick="resetForm()">🧹Limpar Formulário</button>  
+            </div>
+        </form>
+    </div>
+
+    <!-- bootstrap -->
+    <script src="../public/js/bootstrap.min.js"></script>
+    <script src="cliente.js"></script>
+</body>
+    
+</html>

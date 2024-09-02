@@ -1,0 +1,166 @@
+/* esconder o id do cliente */
+/*
+#inputId{
+    display: none;
+}
+*/
+/* Inserir imagem no botão reset*/
+#btnReset{
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/clear.png');
+    background-size: cover;
+    border: none;
+    margin-left: 30px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.container2{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer{
+    height: 70px;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    text-align: center;
+    align-items: center;
+    background-color: brown;
+    font-weight: 900;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p{
+    margin: 0 25px;
+    font-size: 0.7em;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+.button{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2em;
+    border: 1px solid black;
+}
+#MIT{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 1px 0;
+}
+#author{
+    font-weight: 700;
+    color: brown;
+}
+#fecharButton{
+    background-color: white;
+    border-radius: 15px;
+	
+    height: 30px;
+    width: 100px;
+}
+
+#imageProduct{
+    border: 1px solid #dfdfdf;
+    border-radius:  5px;
+    width: 260px;
+    height: 260px;
+    padding: 4px;
+    position: fixed;
+    right: 50px;
+    bottom: 10px;
+}
+#inputLogradouro{
+    width: 250px;
+}
+#inputCep{
+    width: 15250px0px;
+}
+#inputCidade{
+    width: 250px;
+}
+#inputComplemento{
+    width: 75px;
+}
+#inputEstado{
+    width: 75px;
+}
+#inputNumero{
+    width: 75px;
+}
+#inputbutao{
+    width: 200px;
+}
+#butaocontainer{
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+.cepinput{
+    display: block;
+    width: 100% ;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.cepinput:disabled{
+    background-color: #E9ECEF;
+}
+.cepcontainer{
+    padding: 0 8px;
+    margin: 16px 0 0;
+}
+#divisao{
+    display: flex;
+    flex-direction: row;
+}
+#divisao1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+#divisao2{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+#inputName{
+    width: 250px;
+}
+#inputCPNJ{
+    width: 200px;
+}
+#inputPhone{
+    width: 250px;
+}
+#inputEmail{
+    width: 200px;
+}
+.divcemperc{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

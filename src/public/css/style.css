@@ -1,0 +1,165 @@
+/* esconder o id do cliente */
+
+.inputId, #idFornecedor{
+    display: none;
+}
+
+/* Inserir imagem no botão reset*/
+/*
+#btnReset{
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/clear.png');
+    background-size: cover;
+    border: none;
+    margin-left: 30px;
+}
+*/
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+footer{
+    height: 70px;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    text-align: center;
+    align-items: center;
+    background-color: brown;
+    font-weight: 900;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p{
+    margin: 0 25px;
+    font-size: 0.7em;
+}
+.container-fornecedor{
+   padding: 0 0 0 20px;
+   margin: 0;
+   border: 0;
+   width: 900px;
+}
+.container-cliente{
+    padding: 0 0 0 20px;
+    margin: 0;
+    border: 0;
+    width: 700px;
+ }
+.container-produtos{
+    padding: 0 0 0 20px;
+    margin: 0;
+    border: 0;
+    width: 740px;
+ }
+.container2{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#formCssFornecedor{
+    width: 1200px;
+}
+#formCssCliente{
+    width: 500px;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+.button{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2em;
+    border: 1px solid black;
+}
+#MIT{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 1px 0;
+}
+#author{
+    font-weight: 700;
+    color: brown;
+}
+#fecharButton{
+    background-color: white;
+    border-radius: 15px;
+    height: 30px;
+    width: 100px;
+}
+#imageProduct{
+    border: 1px solid #dfdfdf;
+    border-radius:  5px;
+    width: 200px;
+    height: 200px;
+    padding: 4px;
+    position: fixed;
+    right: 50px;
+    top: 259px;
+    
+}
+.smallInput{
+    width: 75px;
+    height: 30px;
+}
+.midInput{
+    width: 150px;
+    height: 30px;
+}
+.bigInput{
+    width: 300px;
+    height: 30px;
+}
+.divInput{
+    margin: 0;
+}
+.buttonCRUD{
+    background-color: #212529;
+    color: white;
+}
+.buttonCRUD:disabled{
+    background-color: white;
+    color: #212529;
+}
+.searchButton{
+    margin: 10px;
+}
+.buscarCep{
+    background-color: brown;
+    color: white;
+    margin-left: 10px;
+}
+#CEP{
+    display: flex;
+    flex-direction: row;
+}
+#barraDePesquisa{
+    margin: 0 0 10px 0;
+    border-bottom: 1px solid brown;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+#btnCreate{
+    background-color: brown;
+}
+#btnCreate:disabled{
+    background-color: white;
+    color: #212529;
+}
+#btnReset{
+    background-color: green;
+}
+#btnReset:disabled{
+    background-color: white;
+    color: #212529;
+}

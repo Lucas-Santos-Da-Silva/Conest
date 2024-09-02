@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fornecedores</title>
+    
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+
+</head>
+<body>
+    <br>
+    <div class="container-fornecedor">
+        <form class="row g-3" id="formFornecedor formCssFornecedor">
+            <!-- Caixa de input usada na pesquisa de um nome de fornecedor -->
+            <div id="barraDePesquisa">
+                <div class="col-md-6">
+                <input type="text" class="form-control" id="inputSearch" maxlenght="30" spellcheck="false">
+                </div>
+                <!-- Botão de pesquisa de fornecedores CRUD Read -->
+                <div class="col-md-4">
+                    <button type="button" onclick="buscarFornecedor()" class="btn searchButton btn-dark" id="btnRead">Buscar</button>
+                </div>
+            </div>
+            <!-- id MongoDB ocultar essa linha-->
+            <!-- id oculto-->
+            <div class="divInput col-md-6" id="idFornecedor">
+                <input type="text" id="inputIDForne" class="form-control inputId" placeholder="id">                
+            </div>
+            <!-- nome do fornecedor -->
+            <div class="divInput col-md-5">
+                <label for="inputRazaoSocial" class="form-label">Razão social</label>
+                <input type="text" id="inputRazaoSocial" class="form-control bigInput"  required maxlength="30" spellcheck="false">
+            </div>
+            <!-- CNPJ do fornecedor -->
+            <div class="divInput col-md-5">
+                <label for="inputCNPJ" class="form-label ">CNPJ</label>
+                <input type="text" id="inputCNPJ" class="form-control midInput"  required maxlength="15" spellcheck="false">
+            </div>
+            <!-- telefone do fornecedor -->
+            <div class="divInput col-md-5">
+                <label for="inputPhone" class="form-label ">Telefone</label>
+                <input type="tel" id="inputPhone" class="form-control midInput"  required maxlength="15" spellcheck="false">
+            </div>
+            <!-- email do fornecedor -->
+            <div class="divInput col-md-5">
+                <label for="inputEmail" class="form-label " >E-mail</label>
+                <input type="mail" id="inputMail" class="form-control bigInput"   required maxlength="30" spellcheck="false">
+            </div>  
+            <div class="divInput col-md-5">
+                <label for="txtCEP" class="form-label">CEP</label>
+                <br>
+                <div id="CEP">
+                    <input type="text" id="inputCep" class="form-control midInput" name="txtCEP" required maxlength="9">
+                    <button type="button" class="btn buscarCep btn-sm" value="Procurar CEP" onclick="procurarCEP()">Buscar Endereço</button>
+                </div>
+            </div>
+            <div class="divInput col-md-5 ">
+                <label for="txtBairro" class="form-label">Numero</label>
+                <br>
+                <input type="text" id="inputNumero" class="form-control smallInput" name="txtNumero" >
+            </div>
+            <div class="divInput col-md-5 ">
+                <label for="txtLogradouro" class="form-label ">Logradouro</label>
+                <br>
+                <input type="text" id="inputLogradouro" class="form-control bigInput" name="txtLogradouro" >
+            </div>
+            <div class="divInput col-md-5 ">
+                <label for="txtBairro" class="form-label ">Bairro</label>
+                <br>
+                <input type="text" id="inputBairro" class="form-control bigInput" name="txtBairro" >
+            </div>
+            <div class="divInput col-md-5 " >
+                <label for="inputCidade" class="form-label ">Cidade</label>
+                <br>
+                <input type="text"  id="inputCidade" class="form-control bigInput" name="txtLocalidade" >
+            </div>
+            <div class="divInput col-md-5 ">
+                <label for="txtComplemento" class="form-label ">Complemento</label>
+                <br>
+                <input type="text" id="inputComplemento" class="form-control bigInput" name="txtComplemento" >
+            </div>
+            <div class="divInput col-md-5 ">
+                <label for="txtComplemento" class="form-label ">Estado</label>
+                <br>
+                <input type="text" id="inputEstado" class="form-control smallInput" name="txtUf" >
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn buttonCRUD" id="btnCreate">➕Adicionar</button>
+                <button type="button" class="btn buttonCRUD" id="btnUpdate" onclick="editarFornecedor()">✏Editar</button>
+                <button type="button" class="btn buttonCRUD" id="btnDelete" onclick="excluirFornecedor()">🗑Excluir</button>
+                <button type="reset" class="btn buttonCRUD" id="btnReset" onclick="resetForm()">🧹Limpar Formulário</button>   
+            </div>
+        </form>
+    </div>
+    <script src="../public/js/bootstrap.min.js"></script>
+    <script src="../views/fornecedor.js"></script>
+    <script src="../views/cep.js"></script>
+</body>
+</html>
